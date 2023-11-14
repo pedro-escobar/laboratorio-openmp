@@ -57,7 +57,7 @@ void Sample_End() {
     int THR, i;
 
     for (THR=0; THR < N_THREADS; THR++) {
-        printf(" %1.0f:  ", (double) THR);
+        printf(" %1.0f,  ", (double) THR);
         stop[THR].tv_usec -= start[THR].tv_usec;
         if (stop[THR].tv_usec < 0) {
             stop[THR].tv_usec += 1000000;

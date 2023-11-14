@@ -17,4 +17,4 @@ MM1c:
 	$(GCC) $(oT) $(oL) $@.c -o $(BINDIR)$@ $(CFLAGS)
 
 MM1f:
- 	$(GCC) $(oT) $(oL) $@.c -o $(BINDIR)$@
+	$(GCC) $(oT) $(oL) $@.c -o $(BINDIR)$@ $(CFLAGS)

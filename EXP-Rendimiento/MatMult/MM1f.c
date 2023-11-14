@@ -16,7 +16,7 @@
 # define MIN(x,y) ((x)<(y)?(x):(y))
 # endif
 
-# define DATA_SZ (1024*1024*100*3)
+# define DATA_SZ (1024*1024*64*3)
 
 static double MEM_CHUNK[DATA_SZ];
 
@@ -68,15 +68,17 @@ Sample_Init(argc, argv);
     Sample_Start(THR);
 
 #pragma omp for 
-    for (i=0; i<SZ; i++)
+    for (i=0; i<SZ; i++){
+        double *pA = a+(i*SZ);
         for (j=0; j<SZ; j++) {
-            double *pA, *pB, S;
-            S=0.0; 
-            pA = a+(i*SZ); pB = b + (j*SZ);
-            for (k=SZ; k>0; k--, pA++, pB++) 
-                S += (*pA * *pB);
-            c[i*SZ+j]= S;
+            double *pB;
+            pB = b + (j*SZ);
+
+            for (k=SZ; k>0; k--, pB++) 
+                c[i*SZ+j] += (*pA * *pB);
+            pA++;
         }
+    }
 
     Sample_Stop(THR);
 }
