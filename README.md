@@ -1,6 +1,6 @@
 # laboratorio-openmp
 
-El presente repositorio contiene la información necesaria para ejecutar dos algoritmos de multiplicación de matrices cuadradas y resultados obtenidos para cada uno de estos, ejecutados en dos máquinas con sistemas operativos diferentes y componentes diferentes.
+El presente repositorio contiene la información necesaria para ejecutar dos algoritmos de multiplicación de matrices cuadradas y resultados obtenidos para cada uno de estos, ejecutados en dos máquinas con sistemas operativos diferentes y componentes diferentes. Este laboratorio fue ejecutado por el estudiante Pedro Escobar, como trabajo individual para la asignatura de Computación de Alto Desempeño, ofrecida por la Universidad Javeriana para la Maestría en Inteligencia Artificial.
 
 ### Directorio BIN
 
@@ -23,3 +23,7 @@ Contiene un ejemplo de una solución obtenida al ejecutar el lanzador. Sólo sir
 Contiene un archivo de Python con el cual se puede hacer tratamiento a los archivos ejecutables, finalizando en un archivo tipo csv que puede ser utilizado por programas tales como Microsoft Excel, RapidMiner, para la visualización de las estadísticas del rendimiento de los algoritmos.
 
 Adicionalmente, en este directorio se almancenan los archivos csv de cada ejecución de las máquinas seleccionadas.
+
+### Directorio informe
+
+Contiene la versión más actualizada del informe del laboratorio. Fue elaborado en Latex utilizando la plataforma Overleaf
