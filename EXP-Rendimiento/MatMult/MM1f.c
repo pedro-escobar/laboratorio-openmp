@@ -16,7 +16,7 @@
 # define MIN(x,y) ((x)<(y)?(x):(y))
 # endif
 
-# define DATA_SZ (1024*1024*64*3)
+# define DATA_SZ (1024*1024*100*3)
 
 static double MEM_CHUNK[DATA_SZ];
 
